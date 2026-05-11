@@ -5,11 +5,11 @@ Documentación técnica para el sistema de préstamos y catálogo de libros.
 
 ## Arquitectura
 ### Diagrama de Clases
-![Diagrama de Clases](docs/diagramas/diagrama-clases.png)
+![Diagrama de Clases](documentos/diagramas/diagrama-clases.png)
 
 ## API Documentation
-[Especificación Swagger (OpenAPI)](docs/api/swagger.yaml)
+[Especificación Swagger (OpenAPI)](documentos/api/swagger.yaml)
 
 ## Guías
-[Guía de Instalación](docs/manual/INSTALACION.md)
+[Guía de Instalación](documentos/manual/INSTALACION.md)
 
