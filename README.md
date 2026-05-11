@@ -1,2 +1,2 @@
-# biblioteca-documentacion
-Documentación del sistema de gestión bibliotecaria
+
+![Diagrama de Clases](diagrama-clases.png)

@@ -1,0 +1,61 @@
+openapi: 3.0.0
+info:
+  title: API de Gestión Bibliotecaria
+  description: API para gestionar el catálogo y préstamos de la biblioteca.
+  version: 1.0.0
+
+servers:
+  - url: http://biblioteca.local
+    description: Servidor de desarrollo
+
+paths:
+  /libros:
+    get:
+      summary: Listar todos los libros
+      responses:
+        '200':
+          description: Una lista de libros
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Libro'
+
+  /prestamos:
+    post:
+      summary: Registrar un nuevo préstamo
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Prestamo'
+      responses:
+        '201':
+          description: Préstamo creado con éxito
+
+components:
+  schemas:
+    Libro:
+      type: object
+      properties:
+        isbn:
+          type: string
+        titulo:
+          type: string
+        autor:
+          type: string
+        disponible:
+          type: boolean
+    
+    Prestamo:
+      type: object
+      properties:
+        idUsuario:
+          type: string
+        isbnLibro:
+          type: string
+        fechaFin:
+          type: string
+          format: date
