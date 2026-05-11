@@ -5,7 +5,7 @@ Documentación técnica para el sistema de préstamos y catálogo de libros.
 
 ## Arquitectura
 ### Diagrama de Clases
-![Diagrama de Clases](documentos/diagramas/diagrama-clases.png)
+![Diagrama de Clases](./documentos/diagramas/diagrama-clases.png)
 
 
 ## API Documentation
