@@ -14,3 +14,5 @@ Documentación técnica para el sistema de préstamos y catálogo de libros.
 ## Guías
 [Guía de Instalación](documentos/manual/INSTALACION.md)
 
+## 🌳 Estructura de Desglose del Trabajo (EDT)
+![EDT del Proyecto](documentos/diagramas/EDT-Biblioteca-v1.0.png)
