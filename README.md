@@ -32,4 +32,4 @@ Documentación técnica para el sistema de préstamos y catálogo de libros.
 | 2.1 | Modelo de Datos | @maria | 16h | 🔄 |
 | 3.1 | Módulo Libros | @carlos | 40h | ⚪ |
 
-🔗 [Ver EDT interactiva en Miro](PEGA_AQUÍ_TU_ENLACE)
+🔗 [Ver EDT interactiva en Miro](https://miro.com/app/live-embed/uXjVHRmtj1o=/?embedMode=view_only_without_ui&moveToViewport=5211%2C-3258%2C10070%2C4814&embedId=212274705629)
