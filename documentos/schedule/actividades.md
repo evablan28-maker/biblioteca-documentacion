@@ -40,3 +40,32 @@ Ejemplo: 4h de esfuerzo con 6.5h productivas/día = ~0.6 días → redondear a 1
 | A10 | A9 | FS | Despliegue después de validación con usuario |
 | A11 | A10 | FS | Documentación final con producto estable |
 | A12 | A11 | FS | Cierre después de entregar documentación |
+
+---
+
+## 📊 Diagrama de Gantt Técnico (Flujo A1-A12)
+
+```mermaid
+gantt
+    title Plan de Desarrollo - Biblioteca Digital v1.0
+    dateFormat  X
+    axisFormat  Día %j
+    
+    section Diseño y Base de Datos
+    Diseñar ERD (A1)           :a1, 0, 1d
+    Crear Esquema BD (A2)      :a2, after a1, 0.5d
+    Especificar Swagger (A3)   :a3, after a1, 1.5d
+
+    section Desarrollo Core
+    Implementar GET (A4)       :a4, after a2 a3, 1d
+    Implementar POST (A5)      :a5, after a4, 1.5d
+    Frontend Listado (A6)      :a6, after a4, 1.5d
+    Formulario Préstamo (A7)   :a7, after a5 a6, 1d
+
+    section Calidad y Cierre
+    Pruebas Integración (A8)   :a8, after a5 a7, 1d
+    Pruebas UAT (A9)           :a9, after a8, 1d
+    Despliegue Staging (A10)   :a10, after a9, 0.5d
+    Docs Finales (A11)         :a11, after a10, 1d
+    Cierre Proyecto (A12)      :milestone, a12, after a11, 0d
+```
