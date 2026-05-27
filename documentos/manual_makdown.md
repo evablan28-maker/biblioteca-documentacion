@@ -391,3 +391,30 @@ pandoc cap1.md cap2.md cap3.md -o libro.pdf
 ---
 
 *Manual generado para Visual Studio Code · Markdown versión CommonMark + GFM*
+
+---
+
+## ⚡ 4. Códigos de Respuesta de la API (Errores Comunes)
+
+Al interactuar con el backend de la biblioteca, el sistema responderá con los siguientes códigos HTTP estándar:
+
+
+| Código | Significado | Causa Común |
+| :--- | :--- | :--- |
+| `200 OK` | Operación exitosa | El libro se consultó o actualizó correctamente. |
+| `211 Created` | Recurso creado | Se registró un nuevo libro o un nuevo usuario con éxito. |
+| `400 Bad Request` | Petición inválida | Falta el título del libro o el ISBN tiene un formato incorrecto. |
+| `404 Not Found` | No encontrado | El ID del libro solicitado no existe en la base de datos. |
+| `409 Conflict` | Conflicto de datos | Se intenta registrar un libro con un ISBN que ya está duplicado. |
+
+---
+
+## ❓ 5. Preguntas Frecuentes (FAQ)
+
+> 💡 **Nota Importante:** Si un usuario tiene un libro vencido, el sistema bloqueará automáticamente su capacidad de solicitar nuevos préstamos hasta que devuelva el ejemplar pendiente.
+
+* **¿Cómo accedo a la documentación de la API?**
+  Una vez que el servidor local esté corriendo, abre tu navegador e ingresa a `http://localhost:3000/api-docs` para ver la interfaz interactiva de Swagger.
+  
+* **¿Dónde se guardan los archivos físicos de los diagramas?**
+  Todos los esquemas de bases de datos y UML se encuentran guardados en formato editable dentro de la carpeta `documentos/diagramas/`.
